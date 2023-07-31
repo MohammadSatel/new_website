@@ -4,8 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Welcome to the Zoo</title>
   <style>
+    title {
+        text-align: center;
+    }
     body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
@@ -87,20 +91,30 @@
 
 <body>
   <header>
-    <h1>Welcome to the Zoo</h1>
+    <h1 style="text-align: center;">Welcome to the Zoo</h1>
   </header>
 
   <nav>
-    <a href="#home">Home</a>
-    <a href="#animals">Animals</a>
-    <a href="#about">About Us</a>
-    <a href="#contact">Contact</a>
+    <a href="index.html">Homepage</a>
+    <a href="animals.html">Animals</a>
+    <a href="pettingsection.html">Petting Section</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
   <div class="container">
     <section id="home">
-      <h2>Welcome to our Zoo!</h2>
-      <p>Welcome to our fantastic zoo where you can explore a diverse range of wildlife from all over the world.</p>
+      <h2 style="text-align: center;"></h2>
+      <p style="text-align: center;">Welcome to our fantastic zoo where you can explore a diverse range of wildlife from all over the world.</p>
+      <br>
+      <p style="text-align: center;"> What is your favorite animal?</p>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Open this select menu</option>
+        <option value="1">Tiger</option>
+        <option value="2">Elephant</option>
+        <option value="3">Lion</option>
+        <option value="4">Lizard</option>
+        <option value="5">Goat</option>
+      </select>
       <br>
       <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
@@ -131,10 +145,16 @@
             </div>
           </div>
         </div>
+        <div>
         <section id="about">
             <h2>Petting Section </h2>
-            <p>Petting section included in the park </p>
-          </section>
+            <p>Petting section is included in the zoo!</p>
+
+              
+          </section></div>
+          <div> <p>
+            
+          </p>
       
 
     
@@ -170,12 +190,43 @@
         </button>
       </div>
 
+      <p style="text-align: center;">        <p style="text-align: center;"> Animals you would like to see?
+      <div form-check>
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Kangaroo
+          </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Panda
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Lion
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Monkey
+            </label>
+          </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+          <label class="form-check-label" for="flexCheckChecked">
+            Tiger
+          </label>
+        </div>
 
     <section id="contact">
-      <h2>Contact</h2>
-      <p>If you have any questions or inquiries, feel free to contact us:</p>
-      <a href = "mailto: MyZoo@gmail.com">Send Email</a>
-      <p><a href="tel:+02-6750111">02-6750111</a></p>
+        <h2 style="text-align: center;"></h2>
+      <p style="text-align: center;"> you have any questions or inquiries, feel free to contact us:</p>
+      <p style="text-align: center;"><a href="mailto:random@gmail.com">Send Email </a>
+      <p style="text-align: center;"><a href="tel:+02-6750111">02-6750111</a></p>
     </section>
   </div>
 </body>
